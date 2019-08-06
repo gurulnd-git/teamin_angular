@@ -1,0 +1,10 @@
+<app-header></app-header>
+<p-organizationChart [value]="data" styleClass="company">
+    <ng-template let-node pTemplate="leaf">
+        <span style="font-weight:bold">{{node.label}}</span>
+    </ng-template>
+    <ng-template let-node pTemplate="default">
+        {{node.label}}
+    </ng-template>
+</p-organizationChart>
+<app-footer></app-footer>

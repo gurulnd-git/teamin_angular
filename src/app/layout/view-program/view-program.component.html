@@ -1,0 +1,16 @@
+<app-header></app-header>
+<table class="table table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Program Id</th>
+      <th scope="col">Program Name</th>
+    </tr>
+  </thead>
+  <tbody class="thead-light">
+    <tr *ngFor="let program of programs">
+      <td>{{program.programId}}</td>
+      <td>{{program.programName}}</td>
+    </tr>
+  </tbody>
+</table>
+<app-footer></app-footer>
